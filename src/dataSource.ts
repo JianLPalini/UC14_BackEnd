@@ -14,7 +14,7 @@ export const AppDataSource = new DataSource({
     password: DB_PASSWORD,
     database: DB_DATABASE,
     entities: [__dirname + '/../models/*.{js,ts}'],
-    synchronize: false,
+    synchronize: true,
     logging: true,
     ssl: false
 })
